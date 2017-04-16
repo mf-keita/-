@@ -129,9 +129,10 @@ public class ShootingView extends SurfaceView
             }
             //プレイ時の処理
             if(scene==S_PLAY){
-                //隕石の出現
+                //隕石とスーパーメテオのためのカウント開始
                 tick++;
                 tick2++;
+                //隕石の出現
                 if(tick>10){
                     tick = 0;
                     meteos.add(new Point(rand(315)+86,-50));
